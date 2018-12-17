@@ -1,0 +1,23 @@
+body{
+    background: url("https://images.pexels.com/photos/356079/pexels-photo-356079.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" );
+
+    
+}
+
+.jumbotron {
+    box-shadow: 5px 10px #888888;
+}
+
+.body2{
+    color: white;
+    background: rgb(167, 162, 162);
+}
+
+
+.container2 {
+   
+        margin: auto;
+        width: 80%;
+        padding: 10px;
+    
+}
