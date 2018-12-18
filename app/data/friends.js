@@ -123,7 +123,7 @@ var friends = [
     },
     {
        name: "David",
-       photo: "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&url=https://stock.adobe.com/images/horror-brutal-jason-mask-man-strong-bodybuilder-athletic-fitness-man-in-scary-hockey-mask-in-the-gym/187097320?as_channel=affiliate&as_campaign=pexels&as_source=arvato",
+       photo:" https://as2.ftcdn.net/jpg/01/87/09/73/500_F_187097320_W3a3PAYtyc3QxZUOjKRlC3zUYfY0XN6u.jpg",
         scores:[
             "1",
             "3",

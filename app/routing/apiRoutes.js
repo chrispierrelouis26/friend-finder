@@ -8,17 +8,19 @@ router.use(express.urlencoded({
   extended: true
 }));
 
-  // Data (api) routes
-  router.get("/friends", function (req, res) {
-    res.json(friends);
-  });
+//   // Data (api) routes
+//   router.get("/friends", function (req, res) {
+//     res.json(friends);
+//   });
 
-  router.post("/friends", function (req, res) {
-    var newCharacter = req.body;
-    console.log(friends);
-    friendArray.push(friends);
-    res.json(friends);
-  });
+//   router.post("/friends", function (req, res) {
+//     var newCharacter = req.body;
+//     console.log(friends);
+//     friendArray.push(friends);
+//     res.json(friends);
+
+    
+//   });
 
   //Linking routes to a specific data source//
 var friends = require("../data/friends");
@@ -26,14 +28,14 @@ var friendArray = [];
 
 //Routing//
 
-module.exports = function (app) {
+// module.exports = function (app) {
 
-    app.get("/api/friends", function (req, res) {
+    router.get("/friends", function (req, res) {
         res.json(friends);
 
     });
 
-    app.post("/api/friends", function (req, res) {
+    router.post("/friends", function (req, res) {
         // console.log(req.body.scores);
         var scoreArr = [];
         var newUser = req.body;
@@ -43,9 +45,9 @@ module.exports = function (app) {
         console.log(newScoreTotal);
 
         for (var i = 0; i < friends.length; i++) {
-            console.log(friends[i]); // a friend from the list
-            var scoreTotal = friends[i].scores.reduce(function (a, b) { return a + b; }, 0);
-            console.log(scoreTotal);
+            // console.log(friends[i]); // a friend from the list
+            var scoreTotal = friends[i].scores.reduce(function (a, b) { return parseInt(a) + parseInt(b); }, 0);
+            // console.log(scoreTotal);
             //creates array of friendlist score totals//
             scoreArr.push(scoreTotal);
         };
@@ -64,10 +66,10 @@ module.exports = function (app) {
                
             };
         };
+            res.send(friends[smallestDiff.index]);
             console.log(friends[smallestDiff.index]);
     });
 
-};
 
 module.exports = router;
 
