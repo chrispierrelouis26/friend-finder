@@ -2,12 +2,17 @@ var express = require("express");
 var path = require("path");
 
 
+// for loop going through friends list
+//inner for loop gets score from current friend 
+
+
+
 
 var friends = [
     {
-        "name": "Ahmed",
-        "photo": "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
-        "scores": [
+       name: "Ahmed",
+       photo: "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
+        scores: [
             "5",
             "1",
             "4",
@@ -22,9 +27,9 @@ var friends = [
         ]
     },
     {
-        "name": "Jason",
-        "photo": "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&url=https://stock.adobe.com/images/horror-brutal-jason-mask-man-strong-bodybuilder-athletic-fitness-man-in-scary-hockey-mask-in-the-gym/187097320?as_channel=affiliate&as_campaign=pexels&as_source=arvato",
-        "scores":[
+       name: "Jason",
+       photo: "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&url=https://stock.adobe.com/images/horror-brutal-jason-mask-man-strong-bodybuilder-athletic-fitness-man-in-scary-hockey-mask-in-the-gym/187097320?as_channel=affiliate&as_campaign=pexels&as_source=arvato",
+        scores:[
             "4",
             "3",
             "2",
@@ -44,9 +49,9 @@ var friends = [
 
     },
     {
-        "name": "Becca",
-        "photo": "https://www.pexels.com/photo/selective-focus-photography-of-woman-sitting-on-green-grass-1580271/",
-        "scores":[
+       name: "Becca",
+       photo: "https://www.pexels.com/photo/selective-focus-photography-of-woman-sitting-on-green-grass-1580271/",
+        scores:[
             "4",
             "3",
             "2",
@@ -61,9 +66,9 @@ var friends = [
         ]
     },
     {
-        "name": "Muhammed",
-        "photo": "https://www.pexels.com/photo/man-in-blue-sports-shirt-wearing-eyeglasses-899357/",
-        "scores": [
+       name: "Muhammed",
+       photo: "https://www.pexels.com/photo/man-in-blue-sports-shirt-wearing-eyeglasses-899357/",
+        scores: [
             "5",
             "1",
             "4",
@@ -78,9 +83,9 @@ var friends = [
         ]
     },
     {
-        "name": "Alexis",
-        "photo": "https://www.pexels.com/photo/closeup-photography-of-woman-wearing-white-spaghetti-strap-top-1343258/",
-        "scores":[
+       name: "Alexis",
+       photo: "https://www.pexels.com/photo/closeup-photography-of-woman-wearing-white-spaghetti-strap-top-1343258/",
+        scores:[
             "4",
             "3",
             "2",
@@ -100,9 +105,9 @@ var friends = [
 
     },
     {
-        "name": "Susana",
-        "photo": "https://www.pexels.com/photo/woman-sitting-on-black-chair-1433495/",
-        "scores":[
+       name: "Susana",
+       photo: "https://www.pexels.com/photo/woman-sitting-on-black-chair-1433495/",
+        scores:[
             "4",
             "3",
             "2",
@@ -117,9 +122,9 @@ var friends = [
         ]
     },
     {
-        "name": "David",
-        "photo": "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&url=https://stock.adobe.com/images/horror-brutal-jason-mask-man-strong-bodybuilder-athletic-fitness-man-in-scary-hockey-mask-in-the-gym/187097320?as_channel=affiliate&as_campaign=pexels&as_source=arvato",
-        "scores":[
+       name: "David",
+       photo: "https://clkde.tradedoubler.com/click?p=264311&a=3045532&g=24328740&url=https://stock.adobe.com/images/horror-brutal-jason-mask-man-strong-bodybuilder-athletic-fitness-man-in-scary-hockey-mask-in-the-gym/187097320?as_channel=affiliate&as_campaign=pexels&as_source=arvato",
+        scores:[
             "1",
             "3",
             "3",
@@ -134,9 +139,9 @@ var friends = [
         ]
     },
     {
-        "name": "Angela",
-        "photo": "https://www.pexels.com/photo/woman-holding-book-864938/",
-        "scores":[
+       name: "Angela",
+       photo: "https://www.pexels.com/photo/woman-holding-book-864938/",
+        scores:[
             "1",
             "5",
             "1",
