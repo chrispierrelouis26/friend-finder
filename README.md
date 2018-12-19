@@ -2,7 +2,7 @@
 
 
 Friend Finder
-Boot Camp HW 13 - FriendFinder - node.js and express server exercise
+
 
 This app allows user to take a survey, answering 10 psychological questions with a 1-5 scale of agree to disagree. Upon submit, the survey answers will be compared to the other people who filled out the survey to see who is the closest match. He will also be added to the existing friends database.
 
