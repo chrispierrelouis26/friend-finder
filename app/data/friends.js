@@ -11,7 +11,7 @@ var path = require("path");
 var friends = [
     {
        name: "Ahmed",
-       photo: "https://www.pexels.com/photo/adult-beard-boy-casual-220453/",
+       photo: "https://images.pexels.com/photos/35537/child-children-girl-happy.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         scores: [
             "5",
             "1",
@@ -83,7 +83,7 @@ var friends = [
         ]
     },
     {
-       name: "Alexis",
+       name: "Shana",
        photo: "https://www.pexels.com/photo/closeup-photography-of-woman-wearing-white-spaghetti-strap-top-1343258/",
         scores:[
             "4",
@@ -98,11 +98,6 @@ var friends = [
             "5",
 
         ]
-       
-
-
-
-
     },
     {
        name: "Susana",
@@ -125,22 +120,22 @@ var friends = [
        name: "David",
        photo:" https://as2.ftcdn.net/jpg/01/87/09/73/500_F_187097320_W3a3PAYtyc3QxZUOjKRlC3zUYfY0XN6u.jpg",
         scores:[
-            "1",
-            "3",
-            "3",
-            "1",
             "5",
-            "3",
+            "4",
+            "1",
+            "2",
+            "1",
             "1",
             "3",
-            "4",
+            "1",
+            "2",
             "1",
 
         ]
     },
     {
        name: "Angela",
-       photo: "https://www.pexels.com/photo/woman-holding-book-864938/",
+       photo: "https://images.pexels.com/photos/209895/pexels-photo-209895.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
         scores:[
             "1",
             "5",
